@@ -1,4 +1,4 @@
-﻿# Mining Assistant by Vorxen — Downloads
+# Mining Assistant by Vorxen — Downloads
 
 Overlay para **Star Citizen** que lê o número **RS (radar signature)** do scanner de mineração na sua tela e mostra qual minério provavelmente é, inclusive **quantas rochas** há no cluster.
 
@@ -19,6 +19,12 @@ Overlay para **Star Citizen** que lê o número **RS (radar signature)** do scan
    - cores originais do HUD (desligue filtros NVIDIA/AMD/ReShade; se a leitura falhar com HDR ligado, teste sem HDR);
    - **não** rode o Star Citizen/RSI Launcher como administrador (senão os atalhos não funcionam dentro do jogo).
 4. Clique em **START** e troque para o jogo durante a contagem de 5 segundos. Faça o ping do scanner: quando a placa âmbar com o RS aparecer, o overlay mostra o minério.
+
+## Atualizações automáticas
+
+A partir da **v0.1.9** o app pode se atualizar sozinho. Na primeira vez ele pergunta; se você aceitar, ele procura versões novas aqui ao abrir e a cada 6 horas, baixa só com a leitura parada e instala na próxima vez que você abrir o app. Cada atualização é **assinada digitalmente** pelo Vorxen e conferida antes de instalar. Desligar: *Functions → Automatic updates*. Atualizar na hora: *Advanced settings → Check for updates* e depois *Install update now*.
+
+Quem tem a v0.1.8 ou anterior precisa baixar a versão nova **à mão uma única vez**.
 
 ## Atalhos
 
@@ -43,7 +49,7 @@ O app nunca envia nada sozinho: só vai o que você digitou, quando você clica.
 
 ## Segurança
 
-O app é **totalmente externo** ao Star Citizen: só lê a imagem que já está na sua tela (como um print). Ele **não** injeta DLL, **não** lê nem altera a memória do jogo, **não** mexe em arquivos do jogo, **não** intercepta a rede, **não** envia teclas ou cliques ao jogo e **não** abre nenhuma conexão de rede. O OCR (leitura do número) é feito pelo próprio Windows, no seu PC.
+O app é **totalmente externo** ao Star Citizen: só lê a imagem que já está na sua tela (como um print). Ele **não** injeta DLL, **não** lê nem altera a memória do jogo, **não** mexe em arquivos do jogo, **não** intercepta a rede, **não** envia teclas ou cliques ao jogo e **não** envia nenhum dado seu. A única conexão de rede é a de atualizações automáticas (se você aceitar), que só baixa os arquivos públicos deste repositório. O OCR (leitura do número) é feito pelo próprio Windows, no seu PC.
 
 Ainda assim, só a CIG pode dizer como aplica as regras dela a ferramentas de terceiros. Use por sua conta.
 
